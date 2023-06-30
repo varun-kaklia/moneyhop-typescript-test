@@ -15,7 +15,14 @@ const Sidebar = ({ showSidebar, setShowSidebar }: SideBarProps) => {
   return (
     <div className={`z-50 fixed inset-y-0 delay-150 duration-150 transform transition-all ${showSidebar?' left-0':' -left-[100%]'} w-full flex flex-col h-screen bg-secondary text-white transition-transform duration-300 transform`}>
       <div className="flex items-center justify-between w-full px-4 py-3">
-        <h1 className="text-2xl font-bold">Sidebar</h1>
+        <div className="px-0.5 w-fit">
+                <img
+                src="/assets/images/Vector.png"
+                className="bg-primary rounded-md w-10 h-10 p-1.5"
+                alt="logo"
+                />
+        </div>
+          <h1 className="text-xl font-semibold  px-1">Shop</h1>
         <button
           className="text-white focus:outline-none "
           onClick={toggleSidebar}

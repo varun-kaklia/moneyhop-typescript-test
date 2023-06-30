@@ -9,14 +9,14 @@ const Header = () => {
     <header className="flex flex-col md:justify-between md:flex-row w-full py-2">
       <div className=" w-full md:w-auto">
         <div className="flex items-center w-full justify-start">
-          <div className="px-0.5 w-fit">
+          <div className="w-fit sm:block hidden ">
             <img
               src="/assets/images/Vector.png"
               className="bg-primary rounded-md w-10 h-10 p-1.5"
               alt="logo"
             />
           </div>
-          <h1 className="text-xl font-semibold  px-1">Shop</h1>
+          <h1 className="text-xl font-semibold hidden px-1">Shop</h1>
           <div onClick={()=>setShowSidebar(!showSidebar)} className=" cursor-pointer px-1 flex items-center">
             <Bars customClass={"text-[#6440FB]"} />
             <span className="text-[#6440FB] px-1">Explore</span>

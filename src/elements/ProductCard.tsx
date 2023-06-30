@@ -48,8 +48,7 @@ const ProductCard = ({ product }: ProductProps) => {
         <div className="border-t border-gray-200">
           <div className="flex justify-between items-center">
             <div className="py-2 flex items-center">
-              <img src={'/assets/images/tutor.png'} className="w-8 h-8 bg-gray-200 rounded-full" />
-              <h2 className="text-sm px-2">SHubh</h2>
+              <button className='px-2 py-1 bg-secondary border-secondary border text-white rounded-lg'>Add to Cart</button>
             </div>
             <div className="py-2 flex items-center">
               <p className="text-base px-0.5 font-medium text-gray-600 line-through">$189</p>
